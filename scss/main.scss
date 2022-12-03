@@ -1,0 +1,18 @@
+// UTILS
+@import "./utils/mixins";
+@import "./utils/variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+// BASE
+@import "./base/reset";
+
+// LAYOUT
+@import "./layout/bio";
+@import "./layout/services";
+@import "./layout/work";
+@import "./layout/footer";
+
+// COMPONENTS
+@import "./components/navbar";
+@import "./components/cards";
+// PAGES

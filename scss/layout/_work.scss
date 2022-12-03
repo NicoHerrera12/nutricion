@@ -1,0 +1,42 @@
+.work {
+    padding: 15px;
+    color: $color-texto;
+    background-color: $color-terciario;
+    padding-bottom: 2rem;
+    @include medium{
+        padding-bottom: 4rem;
+    }
+    @include large{
+        padding-bottom: 5rem;
+    }
+    &__title {
+        padding: 5px;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 2rem;
+        @include large{
+            padding-top: 4rem;
+        }
+    }
+
+    &__img {
+        padding-top: 50px;
+        width: 300px;
+
+        @include medium {
+            width: 60%;
+        }
+    }
+
+    &__info {
+        padding: 20px 10px;
+        @include medium {
+            padding: 10px 5rem;
+            font-size: 1.1rem;
+        }
+        @include large{
+            padding: 10px 8rem;
+            font-size: 1.3rem;
+        }
+    }
+}

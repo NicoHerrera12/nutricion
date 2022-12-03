@@ -1,0 +1,72 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-terciario;
+    color: $color-texto;
+    &__title{
+        font-size: 3rem;
+    }
+    &__title, &__info{
+        padding: 1rem 3rem;
+        @include medium{
+            padding: 1rem 5rem;
+        }
+    }
+
+    @include large {
+        display: grid;
+        grid-template-columns: 5% 40% 5% 5% 40% 5%;
+        grid-template-areas:
+            "title title"
+            "info info"
+            "uno dos"
+            "tres cuatro"
+        ;
+
+        &__title {
+            grid-area: title;
+            grid-column: 2/6;
+            padding: 1rem 6rem;
+        }
+
+        &__info {
+            grid-area: info;
+            grid-column: 2/6;
+            padding: 1rem 6rem;
+        }
+    }
+}
+
+.card {
+    width: 18rem;
+    margin-top: 20px;
+
+    @include medium {
+        border: none;
+    }
+
+    @include large {
+        justify-self: center;
+
+        &--uno {
+            grid-area: uno;
+            grid-column: 2/4;
+        }
+
+        &--dos {
+            grid-area: dos;
+            grid-column: 4/6;
+        }
+
+        &--tres {
+            grid-area: tres;
+            grid-column: 2/4;
+        }
+
+        &--cuatro {
+            grid-area: cuatro;
+            grid-column: 4/6;
+        }
+    }
+}
