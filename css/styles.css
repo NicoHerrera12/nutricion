@@ -44,7 +44,11 @@ a {
   }
 }
 .bio__img {
+  margin-top: 10px;
   width: 250px;
+  background: rgb(22, 36, 100);
+  background: linear-gradient(133deg, rgb(22, 36, 100) 5%, rgb(187, 131, 139) 81%);
+  border-radius: 15% 85% 71% 29%/28% 47% 53% 72%;
   grid-area: img;
   grid-column: 2/4;
 }

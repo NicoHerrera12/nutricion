@@ -36,7 +36,11 @@
     }
 
     &__img {
+        margin-top: 10px;
         width: 250px;
+        background: rgb(22,36,100);
+        background: linear-gradient(133deg, rgba(22,36,100,1) 5%, rgba(187,131,139,1) 81%); 
+        border-radius: 15% 85% 71% 29% / 28% 47% 53% 72%;
         grid-area: img;
         grid-column: 2/4;
         @include medium{
