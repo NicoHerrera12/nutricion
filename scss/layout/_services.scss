@@ -41,6 +41,8 @@
 .card {
     width: 18rem;
     margin-top: 20px;
+    height: 429px;
+    overflow: auto;
 
     @include medium {
         border: none;
